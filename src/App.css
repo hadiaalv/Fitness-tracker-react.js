@@ -1,0 +1,304 @@
+/* General Styles */
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: url('/images/gym.jpg'); 
+  background-color:#343a40;
+  background-size: cover; /* Makes sure the background covers the entire page */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repeating */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Center the app */
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px; /* Max width for larger screens */
+  margin: 0 auto; /* Center horizontally */
+  padding: 2px; /* Padding around the app */
+  height: 100vh; /* Full viewport height */
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #000000; 
+  padding:0%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-title {
+  color: #ffffff; /* White text for navbar title */
+  font-size: 30px; /* Larger font size */
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-menu li {
+  position:relative;
+}
+
+.navbar-link {
+  color: #f7f5f5; /* White text for navbar links */
+  padding: 20px 30px;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.2s; /* Smooth transition effects */
+}
+
+.navbar-link:hover {
+  background-color: rgba(43, 40, 40, 0.2); /* Slight white background on hover */
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+  position: absolute;
+  background-color: #ffffff; /* White background for dropdown */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 150px; /* Fixed width for dropdown */
+}
+
+.dropdown-link {
+  display: block;
+  padding: 10px 15px;
+  color: #090909; /* Blue text for dropdown links */
+  text-decoration: none;
+  transition: background 0.3s; /* Smooth transition */
+}
+
+.dropdown-link:hover {
+  background-color: #f1f1f1; 
+}
+
+/* Page Styles */
+h1, h2 {
+  color: #000000; /* Coral color for headings */
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem; /* Larger heading for main titles */
+}
+
+/* Form Styles */
+form {
+  background-color: #ffffff; /* White background for forms */
+  padding: 20px;
+  border-radius: 8px; /* More rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  width: 100%; /* Make the form full width */
+  max-width: 600px; /* Set a max width for forms */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #000000; /* Dark gray text for labels */
+  font-weight: bold; /* Bold text for labels */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="email"],
+input[type="password"] {
+  width: 100%; /* Full width input fields */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px;
+  transition: border-color 0.3s; /* Smooth transition */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #ededef; /* Coral border on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Button Styles */
+button {
+  background-color: #28a745; /* Green button */
+  color: #fffefe; /* White text for buttons */
+  border: none;
+  padding: 12px 20px; /* Increased padding */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s, transform 0.2s; /* Smooth transition effects */
+}
+
+button:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* List Styles */
+ul {
+  padding: 0;
+  list-style: none; /* Remove default bullet points */
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #e9ecef; /* Light gray border between list items */
+}
+
+li:last-child {
+  border-bottom: none; /* Remove border for last item */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-container {
+      flex-direction: column;
+  }
+
+  .navbar-menu {
+      flex-direction: column;
+  }
+
+  .navbar-menu li {
+      margin-bottom: 10px;
+  }
+
+  button {
+      width: 100%; /* Full width buttons on smaller screens */
+  }
+}
+
+.home-page h2{
+  text-align: center;
+}
+
+p{
+  color: #000000;
+}
+
+/* src/components/Footer.css */
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 0;
+  text-align: left;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 20px;
+  min-width: 220px;
+}
+
+.footer-section h2, .footer-section h3 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section ul {
+  color: #aaa;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: #f8b400; /* Highlight color on hover */
+}
+
+.footer-section .contact p, .footer-section .social p {
+  color: #aaa;
+}
+
+.social-icons a {
+  margin-right: 15px;
+  font-size: 20px;
+  color: #aaa;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #f8b400; /* Same hover color for social media icons */
+}
+
+.footer-bottom {
+  background-color: #111;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  border-top: 1px solid #333;
+}
+
+.footer-bottom p {
+  color: #aaa;
+}
+
+.footer-bottom p i {
+  color: red;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .footer-content {
+      flex-direction: column;
+  }
+
+  .footer-section {
+      margin: 10px 0;
+      text-align: center;
+  }
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  width: 150px; /* Adjust the width as needed */
+  height: auto; /* Ensures the image keeps its aspect ratio */
+  border-radius: 10%; /* Optional: gives the image a circular shape */
+}
