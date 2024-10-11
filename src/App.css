@@ -302,3 +302,33 @@ img {
   height: auto; /* Ensures the image keeps its aspect ratio */
   border-radius: 10%; /* Optional: gives the image a circular shape */
 }
+
+.view-logs-page{
+  color: #000000;
+}
+
+.progress-charts-page{
+  background-color: #eeeaea;
+}
+
+
+.goals-page ul li {
+  color: #000000; /* Set the font color to black */
+}
+
+.navbar-logo {
+  width: 150px; 
+  height: auto;
+  cursor: pointer; 
+}
+.progress-charts-page {
+  background-color: rgba(255, 255, 255, 0.9); /* Matching the color of other sections */
+  color: #000000;
+  padding: 20px;
+  border-radius: 8px; /* Curvy corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  margin-top: 20px;
+  width: 100%; /* Full width */
+  max-width: 600px; /* Set max width to match the form and other boxes */
+  margin: 0 auto; /* Center the chart */
+}

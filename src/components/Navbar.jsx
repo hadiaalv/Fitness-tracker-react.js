@@ -20,7 +20,10 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="navbar-container">
-                <h1 className="navbar-title">Fitness Tracker</h1>
+                {/* Wrap the title in a Link to redirect to the homepage */}
+                <Link to="/" className="navbar-title-link">
+                    <h1 className="navbar-title">Fitness Tracker</h1>
+                </Link>
                 <ul className="navbar-menu">
                     <li>
                         <Link to="/" className="navbar-link">Home</Link>

@@ -1,15 +1,19 @@
 {
   "name": "fitness-tracker",
   "private": true,
+  "homepage": "http://hadiaalv.github.io/Fitness-tracker-react.js_upload",
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+ "scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "predeploy": "npm run build", 
+  "deploy": "gh-pages -d dist"
+},
+
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "chart.js": "^4.4.4",
     "dotenv": "^16.4.5",
     "express": "^4.21.0",
@@ -27,6 +31,7 @@
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.9",
+    "gh-pages": "^6.2.0",
     "globals": "^15.9.0",
     "vite": "^5.4.1"
   }
