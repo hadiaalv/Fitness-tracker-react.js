@@ -6,7 +6,7 @@ const LogWorkout = ({ onAddLog }) => {
     return (
         <div className="log-workout-page">
             <h1>Log Your Workout</h1>
-            <LogForm onAddLog={onAddLog} /> {/* Reusing LogForm */}
+            <LogForm onAddLog={onAddLog} />
         </div>
     );
 };
