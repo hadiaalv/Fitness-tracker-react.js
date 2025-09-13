@@ -18,7 +18,7 @@ const App = () => {
 
     const handleSignUp = (userData) => {
         setUser(userData);
-        // Redirect or update the UI after sign-up
+        
     };
 
     const handleLogin = (userData) => {
