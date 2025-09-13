@@ -23,7 +23,7 @@ const App = () => {
 
     const handleLogin = (userData) => {
         setUser(userData);
-        // Redirect or update the UI after login
+       
     };
 
     const handleLogout = () => {
