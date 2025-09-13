@@ -1,4 +1,3 @@
-// src/pages/LogWorkout.jsx
 import React from 'react';
 import LogForm from '../components/LogForm';
 
