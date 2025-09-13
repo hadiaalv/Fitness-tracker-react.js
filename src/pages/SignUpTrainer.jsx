@@ -1,4 +1,3 @@
-// src/pages/SignUpTrainer.jsx
 import React from 'react';
 
 const SignUpTrainer = () => {
